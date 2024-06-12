@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 20px;
+}
+
+main {
+    grid-column: 1 / 2;
+}
+
+.regler {
+    font-family:sans-serif;
+    grid-column: 2 / 3;
+    background-color: darkgreen;
+    height: 100dvh;
+    padding: 20px;
+    border-radius: 12px;
+}
