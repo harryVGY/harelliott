@@ -7,6 +7,13 @@ body {
 main {
     grid-column: 1 / 2;
 }
+.button{
+    margin: 12px;
+    border-radius: 12px;
+    height: 50px;
+    font-size: large;
+}
+
 
 .regler {
     font-family:sans-serif;
