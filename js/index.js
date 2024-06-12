@@ -4,7 +4,7 @@ const standButton = document.getElementById('stand');
 const dubbleButton = document.getElementById('dubble');
 
 startButton.addEventListener('click', () => {
-    fetch('cards.json')
+    fetch('./cards.json')
         .then(response => response.json())
         .then(data => {
             const randomIndex1 = Math.floor(Math.random() * data.length); // Generate a random index
@@ -20,8 +20,8 @@ startButton.addEventListener('click', () => {
             console.log(randomItem1, randomItem2); // Log the random items
             
             // Display the random items
-            document.getElementById('display1').textContent = randomItem1.value;
-            document.getElementById('display2').textContent = randomItem2.value;
+            document.getElementById('display1').textContent = `Value: ${randomItem1.value}, Suit: ${randomItem1.suit}`;
+            document.getElementById('display2').textContent = `Value: ${randomItem2.value}, Suit: ${randomItem2.suit}`;
         });
     
 });
